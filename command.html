@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--เปลี่ยนชื่อบอท-->
+        <title>KP Bot</title>
+        <link rel="stylesheet" href="command.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+        <!--header-->
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="kp.PNG"></a>
+        
+        <div class="nav-links" id="navlinks">
+            <img src="image/1016734.png" class="fa fa-times" id="close"onclick="hideMenu()">
+
+            <div class="nav-bar">
+                <a class="navbar" id="home" href="index.html">Home</a>
+                <a class="navbar" id="story" href="story.html">Story</a>
+                <a class="navbar" id="invite" href="https://discord.com/api/oauth2/authorize?client_id=916219737124536350&permissions=8&scope=bot%20applications.commands" target="_blank">Invite</a>
+                <a class="navbar" id="command" href="command.html">Commands</a>
+                <a class="navbar" id="feature" href="feature.html">Features</a>
+                <button class="btn-lang">
+                    <a class="nav-lang" id="lang" href="#">
+                        <div class="navlang"><img src="us.png" class="img-lang">English</div>
+                    </a>
+                    <!--<div class="ln">
+                        <a class="ln1" href="#"><img src="th.png" class="img-lang">Thai</a>
+                    </div>-->
+                </button>  
+            </div>
+        </div>
+        
+            <a class="btn" id="login" href="#">Login</a>   
+            <img src="image/menu-icon.png" class="fa fa-bars" id="open" onclick="showMenu()">   
+    </nav>
+</section>
+            <!--<nav>
+                <a href="index.html"><img src="#"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">STORY</a></li>
+                        <li><a href="#">INVITE</a></li>
+                        <li><a href="#">PROPERTY</a></li>
+                        <li><a href="#">LANGUAGE</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="login">LOGIN</a></li>
+            </nav>-->
+<div class="text-container">
+    <div class="text-box">
+        <h1>KP's Command</h1>  
+        <input type="text" class="box" placeholder="Search for command 🔍">
+    </div>
+    <br>
+    <!--ช่องหัวข้อ-->
+    <div class="crtl">
+        <button class="button">ALL</button>
+        <button class="button">General</button>
+        <button class="button">Moderation</button>
+        <button class="button">Music</button>
+    </div>
+    <!--commamd-->
+<!--utility-->
+<div class="text-command">
+    <ul>
+        <h6 class="helpcommand">
+            &ping
+        </h6>
+        <p class="inline">
+            - Send Discord API latency asms
+    </ul>
+</div>
+<div class="text-command">
+    <ul>
+        <h6 class="helpcommand">
+            &setting
+        </h6>
+        <p class="inline">
+            - Confic discord bot settings
+        </p>
+    </ul>
+</div>
+<!--music-->
+<div class="text-command">
+    <ul>
+        <h6 class="helpcommand">
+            &play
+        </h6>
+        <p class="inline">
+            - Add a song to queue and plays it.
+        </p>
+    </ul>
+</div>
+<div class="text-command">
+    <ul>
+        <h6 class="helpcommand">
+            &join
+        </h6>
+        <p class="inline">
+            - Join voice chanel.
+        </p>
+    </ul>
+</div>
+<div class="text-command">
+    <ul>
+        <h6 class="helpcommand">
+            &leave
+        </h6>
+        <p class="inline">
+            - Leave voice chanel.
+        </p>
+    </ul>
+</div>
+<div class="text-command">
+    <ul>
+        <h6 class="helpcommand">
+            &volume
+        </h6>
+        <p class="inline">
+            - Changes/Shows the current volume.
+        </p>
+    </ul>
+</div>
+<div class="text-command">
+    <ul>
+        <h6 class="helpcommand">
+            &repeat
+        </h6>
+        <p class="inline">
+            - Toggles the repeat mode.
+        </p>
+    </ul>
+</div>
+<div class="text-command">
+    <ul>
+        <h6 class="helpcommand">
+            &queuelist
+        </h6>
+        <p class="inline">
+            - Display the queue of the current tracks in the playlist.
+        </p>
+    </ul>
+</div>
+<div class="text-command">
+    <ul>
+        <h6 class="helpcommand">
+            &skip
+        </h6>
+        <p class="inline">
+            - Skip the current song.
+        </p>
+    </ul>
+</div>
+<!--game-->
+<div class="text-command">
+    <ul>
+        <h6 class="helpcommand">
+            &eightball
+        </h6>
+        <p class="inline">
+            - n/a
+        </p>
+    </ul>
+</div>
+<div class="text-command">
+    <ul>
+        <h6 class="helpcommand">
+            &coinfilp
+        </h6>
+        <p class="inline">
+            - n/a
+        </p>
+    </ul>
+</div>
+</div>
+</section>
+
+<!--footer-->
+<section class="footer">
+    <div class="ft1-container"> 
+        <div class="ft1">
+            <a href="index.html"><img src="kp.PNG" class="ft1-img"></a>
+            <p>The best Discord bot to boost your happiness</p>
+        </div>
+
+        <div class="ft-copyright">Copyright © 2021 - KP High School</div>
+    </div>
+
+    <div class="ft2">
+        <div class="ft2-col">
+                <div class="ft2-head" id="ft2-abs">About US</div>
+                <p class="ft2-p">This is a small project made by 4 members of high school students, who tried to develop with an effort and improve coding skill. Hope you guys love this website and enjoy using KP bot!</p>
+        </div>
+
+        <div class="ft2-col">
+            <div class="ft2-col-one">
+                <div class="ft2-head" id="ft2-kp">About KP</div>
+                <ul class="ft2-ul">
+                    <a href="story.html">Story</a>
+                    <a href="https://discord.com/api/oauth2/authorize?client_id=916219737124536350&permissions=8&scope=bot%20applications.commands">Invite</a>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="ft2-col">
+            <div class="ft2-head">Properties</div>
+            <ul class="ft2-ul">
+                <a href="feature.html">Features</a>
+                <a href="command.html">Commands</a>
+            </ul>
+        </div>
+    </div>
+</section> 
+</body>
+</html>
